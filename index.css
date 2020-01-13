@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Lato';
+    overflow-x: hidden;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+.header-title{
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(48, 48, 48);
+    cursor: default;
+}
+/*Header*/
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 10em;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+}
+.mascotte{
+    max-height: 150px;
+}
+.logos>img{
+    width: 150px;
+    padding: 0px 50px 0 50px;
+}
+
+#navigation{
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+.menu{
+    cursor: pointer;
+}
+
+.fas{
+    font-size: 10px;
+    padding-left: 5px;
+    color: red;
+}
+
+.menu .fa-chevron-up{
+    display: none;
+}
+
+.menu:hover{
+    color: grey;
+}
+
+.menu:hover .fa-chevron-up{
+    display: inline-block;
+}
+
+.menu:hover .fa-chevron-down{
+    display: none;
+}
+
+
+/*Header Menu*/
+.menu1{
+    display: none;
+    position: absolute;
+    z-index: 55555555;
+    margin: auto;
+    left: 0;
+    justify-content: space-between;
+    background-color: white;
+    min-width: auto;
+    min-height: auto;
+    padding-bottom: 30px;
+}
+#sport-ete{
+    display: flex;
+    padding-left: 2em;
+}
+.b{
+    padding-left: 2em;
+}
+.c{
+    padding-left: 2em;
+}
+
+.sport{
+    display: flex;
+}
+#sport-nav>li{
+    padding-top: 5px;
+}
+
+.sport-menu:hover .menu1{
+    display: flex;
+}
+/*Lima Maps*/
+.lima-maps{
+    display: none;
+    position: absolute;
+    right: 15px;
+    z-index: 9999999999;
+    overflow: hidden;
+    border: 1px solid black
+}
+
+.maps-menu:hover .lima-maps{
+    display: block;
+}
+/*After Header*/
+
+.after-header{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100vw;
+    min-height: 43em;
+    background: url(https://cdn.discordapp.com/attachments/663067516805054515/665158494764138526/landing.png);
+    margin-top: 7em;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lima-img{
+    position: absolute;
+    width: 100%;
+}
+.text-box{
+    position: absolute;
+    left: 3.5em;
+    width: 20em;
+    height: 18em;
+    background: rgba(0, 129, 200, 0.9);
+}
+
+.lima-infos-title{
+    font-size: 32px;
+    text-decoration: underline;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.lima-infos-text{
+    text-align: center;
+    color: whitesmoke;
+}
+
+.lima-infos-readmore{
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    margin: auto;
+    margin-top: 15px;
+    right: 0;
+    left: 0;
+    width: 90%;
+    height: 5em;
+    background: #000;
+    background: rgba(0,0,0,.3);
+}
+
+.lima-infos-readmore::before{
+    content: "Read more";
+    font-size: 25px;
+    color: whitesmoke;
+    font-weight: normal;
+}
+
+.lima-infos-readmore::after{
+    content: "⮞";
+    color: white;
+    font-size: 15px;
+
+}
+/*Lima News Header*/
+.lima-news-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+    background: #0885c2;
+    width: 100vw;
+    height: 7em;
+}
+.lima-news-content{
+    position: relative;
+    margin: 10px auto 10px auto;
+    width: 70em;
+    min-height: auto;
+    text-align: center;
+}
+.lima-news-list{
+    position: relative;
+    min-height: auto;
+}
+.lima-news-list>li{
+    display: inline-block;
+    position: relative;
+    width: 30em;
+    height: 24em;
+    margin: 0px 30px 0px 30px;
+}
+.news-img{
+    position: relative;
+    width: 30em;
+    height: 17em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.news-title{
+    position: absolute;
+    font-size: 23px;
+    text-transform: none;
+    text-align: left;
+}
+.news-date{
+    position: absolute;
+    font-weight: normal;
+    bottom: 0;
+    color: grey;
+    text-align: left;
+    font-size: 13px;
+}
+.first-news{
+    background-image: url(https://images.ladepeche.fr/api/v1/images/view/5dbbd0393e454664cf663b24/large/image.jpg?v=1);
+}
+.second-news{
+    background-image: url(https://media.ottobock.com/_group-site/paralympics/the-games/barcelona-3_credit-unknown-169-4c-form_16_9_teaser_onecolumn.jpg);
+}
+.third-news{
+    background-image: url(https://www.azernews.az/media/pictures/oxatma_160615_11.jpg);
+}
+.last-news{
+    background-image: url(mascotte.png);
+}
+.news-img-ticket{
+    position: absolute;
+    right: 0;
+    width: 10em;
+    height: 2.5em;
+    background: #0885c2;
+}
+.news-img-ticket>h1{
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+/*Lima Buy*/
+
+/*Lima Paralympics*/
+#paralympics-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 7em;
+    background: #138634;
+}
+
+.paralympics-logo{
+    margin-top: 50px;
+    width: 200px;
+}
+.para{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.paralympics-sports-list{
+    position: relative;
+    text-align: center;
+    width: 40em;
+    height: 40em;
+}
+
+.paralympics-sports{
+    display: inline-block;
+    width: 100px;
+    height: 64px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    margin: 30px 20px 0px 20px;
+    cursor: pointer;
+}
+.paralympics-sports>img{
+    width: 64px;
+}
+.paralympics-sports>h1{
+    position: relative;
+    word-wrap: break-word;
+    font-size: 12px;
+    color:black;
+}
+.paralympics-sports:hover{
+    border: 2px solid #138634;
+}
+
+.paralympics-sports:hover h1{
+    color: #138634;
+    text-decoration: underline;
+}
+.lima-infos-paralympics{
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 10em;
+    height: 3em;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+.lima-infos-paralympics:hover{
+    border: 2px solid #138634;
+}
+.lima-infos-paralympics::before{
+    content: "Read more";
+    font-size: 25px;
+    color: black;
+    font-weight: normal;
+}
+
+.lima-infos-paralympics::after{
+    content: "⮞";
+    color: black;
+    font-size: 15px;
+
+}
+/*Sponsors*/
+#sponsors-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 7em;
+    background: #fbb132;
+}
+
+.sponsors-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sponsors-list{
+    position: relative;
+    text-align: center;
+    width: 60em;
+    height: 35em;
+}
+.sponsors{
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 64px;
+    border-radius: 10px;
+    margin: 30px 20px 0px 20px;
+    transition: 2s;
+}
+.sponsors>img{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-height: 100%;
+    max-width: 100%;
+}
+/*Shop*/
+#shop-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: black;
+    width: 100vw;
+    height: 7em;
+}
+
+.shop-list{
+    position: relative;
+    margin: 10px auto 10px auto;
+    width: 50%;
+    min-height: auto;
+    text-align: center;
+}
+.shop-list>li{
+    display: inline-block;
+    position: relative;
+    margin: 3px 10px 3px 10px;
+    width: 18em;
+    min-height: auto;
+}
+.shop{
+    position: relative;
+    overflow: hidden;
+    width: 18em;
+    height: 20em;
+    background-color: lightgrey;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position-x: center;
+    cursor: pointer;
+}
+.shop1{
+    background-image: url(https://cdn.discordapp.com/attachments/663682514849890312/665549239006527498/goodies1.png);
+}
+.shop2{
+    background-image: url(https://cdn.discordapp.com/attachments/663682514849890312/665549255821230080/goodies2.png);
+}
+.shop3{
+    background-size: 170px;
+    background-image: url(https://cdn.discordapp.com/attachments/663682514849890312/665549324284854293/goodies3.png);
+}
+.shop4{
+    background-image: url(https://cdn.discordapp.com/attachments/663682514849890312/665549347202662411/goodies5.png);
+}
+.shop5{
+    background-image: url(https://cdn.discordapp.com/attachments/663682514849890312/665549349195087883/goodies6.png);
+}
+.shop6{
+    background-position-y: 30px;
+    background-image: url(https://cdn.discordapp.com/attachments/663682514849890312/665549355637276685/goodies4.png);
+}
+.shop>h6{
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    left: 10px;
+    text-align: left;
+}
+.shop>h6>span{
+    position: absolute;
+    right: 40px;
+}
+/*Footer*/
+footer{
+    position: relative;
+    width: 100vw;
+    height: 20em;
+    background: rgb(34, 34, 34);
+}
+
+.footer-contact-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 10px;
+    width: 100vw;
+}
+
+.footer-contact-nav>li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-round{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background: orange;
+}
+
+.footer-round>img{
+    width: 30px;
+    height: 30px;
+}
+
+.footer-contact-text{
+    font-weight: normal;
+    font-size: 25px;
+    color: white;
+}
+
+/*Footer Menu Nav*/
+
+.footer-menu-nav{
+    display: flex;
+    margin-top: 20px;
+    padding-top: 25px;
+}
+
+.footer-menu-nav>li{
+    padding-left: 100px;
+}
+
+.footer-second-list{
+    padding-top: 15px;
+}
+
+.footer-second-list>li{
+    color: rgb(107, 107, 107);
+}
+
+.footer-menu-first{
+    color: white;
+}
+
+.footer-contact-text{
+    text-transform: none;
+}
+
+.footer-email-research{
+    all: unset;
+    width: 300px;
+    height: 50px;
+    background: white;
+    border-radius: 2.5px;
+    border: 2px solid orange;
+    cursor: pointer;
+}
+
+.footer-email-research::before{
+    content: ">";
+}
+
+.digital-marketing{
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    font-weight: normal;
+    text-transform: none;
+    color: lightblue;
+}
+
+.hr{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 80vw;
+    height: 2.5px;
+    background: grey;
+    margin-top: 11px;
+}
+
+.subscribe-li{
+    text-transform: none;
+}
