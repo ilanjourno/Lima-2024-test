@@ -138,6 +138,7 @@ header{
     background: url(https://cdn.discordapp.com/attachments/663067516805054515/665158494764138526/landing.png);
     margin-top: 7em;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
