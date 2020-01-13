@@ -190,7 +190,7 @@ header{
 }
 
 .lima-infos-readmore::after{
-    content: "⮞";
+    content: ">";
     color: white;
     font-size: 15px;
 
@@ -348,7 +348,7 @@ header{
 }
 
 .lima-infos-paralympics::after{
-    content: "⮞";
+    content: ">";
     color: black;
     font-size: 15px;
 
