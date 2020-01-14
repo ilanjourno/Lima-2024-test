@@ -373,7 +373,7 @@ header{
     position: relative;
     text-align: center;
     width: 60em;
-    height: 35em;
+    min-height: auto;
 }
 .sponsors{
     display: inline-block;
@@ -393,6 +393,14 @@ header{
     bottom: 0;
     max-height: 100%;
     max-width: 100%;
+}
+#affiliate-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 7em;
+    background: #ff0000 ;
 }
 /*Shop*/
 #shop-header{
