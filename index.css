@@ -201,7 +201,7 @@ header{
 .lima-infos-readmore::after{
     content: ">";
     color: white;
-    font-size: 15px;
+    font-size: 25px;
 
 }
 /*Lima News Header*/
@@ -359,7 +359,7 @@ header{
 .lima-infos-paralympics::after{
     content: ">";
     color: black;
-    font-size: 15px;
+    font-size: 25px;
 
 }
 /*Sponsors*/
