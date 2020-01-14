@@ -81,6 +81,14 @@ header{
 
 
 /*Header Menu*/
+@media screen and (max-width: 992px) {
+    #navigation{
+      display: none;
+    }
+    footer{
+        display: none;
+    }
+  }
 .menu1{
     display: none;
     position: absolute;
