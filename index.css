@@ -81,7 +81,7 @@ header{
 
 
 /*Header Menu*/
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 780px) {
     #navigation{
       display: none;
     }
