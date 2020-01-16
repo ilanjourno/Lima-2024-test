@@ -256,7 +256,9 @@ header{
     font-size: 13px;
 }
 .first-news{
-    background-image: url(https://images.ladepeche.fr/api/v1/images/view/5dbbd0393e454664cf663b24/large/image.jpg?v=1);
+    background-image: url(olympicslogo.png);
+    background-size: contain;
+    background-position: center;
 }
 .second-news{
     background-image: url(https://media.ottobock.com/_group-site/paralympics/the-games/barcelona-3_credit-unknown-169-4c-form_16_9_teaser_onecolumn.jpg);
